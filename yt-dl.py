@@ -17,3 +17,5 @@ for playlist, url in playlists.items():
     print(f"Downloading {playlist}...")
     os.system('yt-dlp --download-archive ' + path + '/downloaded.txt ' + '--no-post-overwrites  --embed-thumbnail -ciwx --audio-format mp3 -o "' + path + '/%(title)s.%(ext)s" --yes-playlist ' + url)
     print(f"DONE {playlist}")
+print("***Download Finished***")
+
